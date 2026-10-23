@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    background-image: url("greenland2.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+.conatiner{
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+h2{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 2em;
+}
+.form-group {
+    position: relative;
+       font-size: 1.2em;
+        width: 330px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+      
+}
+.form-group input{
+   
+    height: 50px;
+    width: 100%;
+   background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 0 30px 0 10px ;
+     border-bottom: 2px solid #fff;
+    
+}
+.form-group label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+   cursor: pointer;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+.form-group input:focus +label,
+.form-group input:valid +label
+
+{
+    top: -8px;
+   
+}
+.form-group i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2em;
+}
+p{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+
+
+}
+p>a{
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+}
+p>a:hover{
+    text-decoration: underline;
+    font-style: italic;
+}
+#btn{
+  width:100% ;
+  height:50px ;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+ transition: 0.5s;
+}
+#btn:hover{
+    background-color: rgba(0 ,0,0 ,0.3);
+    color: #fff;
+}
